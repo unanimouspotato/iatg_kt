@@ -36,6 +36,7 @@ fun handleSnipCommand(snipCommand: SnipCommand, args: List<String>, message: Mes
         SnipCommand.HOTMP4 -> bot.sendVideo(chatId, tgFile)
     }
 
+    file.delete()
     bot.deleteMessage(chatId, messageId)
 }
 
