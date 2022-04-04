@@ -7,6 +7,7 @@ pkgs.mkShell {
     pkgs.yt-dlp
     pkgs.python39Full
     pkgs.python39Packages.spotipy
+    pkgs.cacert
   ];
   shellHook = ''
     echo "Start developing..."
